@@ -1,0 +1,16 @@
+PODS:
+  - JrLiveManager (0.1.0)
+
+DEPENDENCIES:
+  - JrLiveManager (from `../`)
+
+EXTERNAL SOURCES:
+  JrLiveManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JrLiveManager: 51be514786f1564e6404730fb53f36a6025982d5
+
+PODFILE CHECKSUM: 611984444ca58a68e951c5252bcde883809589db
+
+COCOAPODS: 1.10.1

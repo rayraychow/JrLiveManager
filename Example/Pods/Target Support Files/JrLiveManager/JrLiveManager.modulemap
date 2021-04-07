@@ -1,0 +1,6 @@
+framework module JrLiveManager {
+  umbrella header "JrLiveManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
