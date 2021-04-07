@@ -21,15 +21,15 @@
                           @"sdkVersion":sdkVersion
     };
     if (appId.length < 0) {
-        NSLog(@"匠人验签授权接口appId不能为空");
+        NSLog(@"匠人验签授权接口:appId不能为空");
         return;
     }
     if (cdKey.length < 0) {
-        NSLog(@"匠人验签授权接口cdKey不能为空");
+        NSLog(@"匠人验签授权接口:cdKey不能为空");
         return;
     }
     if (sdkVersion.length < 0) {
-        NSLog(@"匠人验签授权接口sdkVersion不能为空");
+        NSLog(@"匠人验签授权接口:sdkVersion不能为空");
         return;
     }
     //将参数转换成NSData类型
