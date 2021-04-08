@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "JrLiveManager.h"
 
 FOUNDATION_EXPORT double JrLiveManagerVersionNumber;
 FOUNDATION_EXPORT const unsigned char JrLiveManagerVersionString[];

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JrLiveManager'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'JrLiveManager'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,8 @@ JrLiveManager配置文件
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'JrLiveManager/Classes/**/*'
+  s.source_files = 'JrLiveManager/Classes/**/*.{h,m}'
+  s.public_header_files = 'JrLiveManager/Classes/JrLiveManager.h'   #需要对外开放的头文件
   
   # s.resource_bundles = {
   #   'JrLiveManager' => ['JrLiveManager/Assets/*.png']
@@ -43,5 +44,8 @@ JrLiveManager配置文件
 s.user_target_xcconfig = {'OTHER_LDFLAGS' => ['-lObjC','-all_load']}#build setting的配置
 s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' } #设置不支持bitcode
 s.user_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' } #设置不支持bitcode
+
+s.dependency 'OpenSSL-Universal'
+#s.vendored_libraries = 'JrLiveManager/Classes/openssl/include/libssl.a', 'JrLiveManager/Classes/openssl/include/libcrypto.a'
 
 end

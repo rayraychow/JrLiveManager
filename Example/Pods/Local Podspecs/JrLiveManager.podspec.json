@@ -1,8 +1,8 @@
 {
   "name": "JrLiveManager",
-  "version": "0.1.0",
-  "summary": "A short description of JrLiveManager.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.1.2",
+  "summary": "JrLiveManager",
+  "description": "JrLiveManager配置文件",
   "homepage": "https://github.com/rayraychow/JrLiveManager",
   "license": {
     "type": "MIT",
@@ -13,10 +13,22 @@
   },
   "source": {
     "git": "https://github.com/rayraychow/JrLiveManager.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "10.0"
   },
-  "source_files": "JrLiveManager/Classes/**/*"
+  "source_files": "JrLiveManager/Classes/**/*.{h,m}",
+  "public_header_files": "JrLiveManager/Classes/JrLiveManager.h",
+  "user_target_xcconfig": {
+    "ENABLE_BITCODE": "NO"
+  },
+  "pod_target_xcconfig": {
+    "ENABLE_BITCODE": "NO"
+  },
+  "dependencies": {
+    "OpenSSL-Universal": [
+
+    ]
+  }
 }

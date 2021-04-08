@@ -6,270 +6,293 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3EDA96977B3454C0AF5F3ED805F80D06 /* Build configuration list for PBXAggregateTarget "OpenSSL-Universal" */;
+			buildPhases = (
+				AFAFAF6A5069BBC19C690B4E263E293A /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = "OpenSSL-Universal";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		014A2842F363E4CBB9A41B76FAB4C044 /* rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 684FA7FF0176F41459E8200E4DB610E1 /* rsa.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		051D5E7752E62084B1BE6069CE169581 /* dso.h in Headers */ = {isa = PBXBuildFile; fileRef = C4EE2BDFE996A819BC539A84B2DA075C /* dso.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		08BC7EAA4BD3C5FF050322168C1715E8 /* asn1t.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0415768F864E81CB302C8ACCC8100E /* asn1t.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0BA86317381C129AA267AAD4E036EFE9 /* opensslconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F71BB7666753ADDB9483ECF1B38FAF4 /* opensslconf.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		10BF14F9B01E406ADE60C77071580B67 /* txt_db.h in Headers */ = {isa = PBXBuildFile; fileRef = B9498D207F8FCB7D8AE5B9B3E7EE9265 /* txt_db.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		10DC74C66669674072A7C3637EDDCC50 /* RSAHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD042F5B07768A14790670272871B8D /* RSAHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		138F917415BFA42007B6CDC880C68433 /* bio.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1C79B2E4AAA61FFB9E55FA67DA2FF0 /* bio.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1411D5EB73A0DD99D15B90550F23EA1B /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D906C3951DB9FD793334F9DF706E955 /* camellia.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		17B711D8A5B974A8FD7E662FC50A015A /* srtp.h in Headers */ = {isa = PBXBuildFile; fileRef = 06BDAD4699AAB410431FCF797A4B3A06 /* srtp.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1D5298DD7D0356270E15B80734E8C3E8 /* Pods-JrLiveManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EE49FBCD804085D943A88E3808D536 /* Pods-JrLiveManager_Tests-dummy.m */; };
-		1DA47D7BC0DFE0AE4E9ACEB300C3FFA0 /* Pods-JrLiveManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEFC24B7AFA43AC9AEB22703CE09D69 /* Pods-JrLiveManager_Example-dummy.m */; };
-		42A8B300A0A8A938776D597111D47E31 /* Pods-JrLiveManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91C2594D4D873781FE0C998EE185596E /* Pods-JrLiveManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57CC326EC384BED9061F3AD89E6E2638 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		81632636261DB19F00DE116B /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 816325DC261DB19E00DE116B /* NSString+Base64.m */; };
-		81632637261DB19F00DE116B /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 816325DE261DB19E00DE116B /* libcrypto.a */; };
-		81632638261DB19F00DE116B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 816325DF261DB19E00DE116B /* LICENSE */; };
-		81632639261DB19F00DE116B /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 816325E0261DB19E00DE116B /* libssl.a */; };
-		8163263A261DB19F00DE116B /* pem2.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325E2261DB19E00DE116B /* pem2.h */; };
-		8163263B261DB19F00DE116B /* pem.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325E3261DB19E00DE116B /* pem.h */; };
-		8163263C261DB19F00DE116B /* ssl3.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325E4261DB19E00DE116B /* ssl3.h */; };
-		8163263D261DB19F00DE116B /* ossl_typ.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325E5261DB19E00DE116B /* ossl_typ.h */; };
-		8163263E261DB19F00DE116B /* dtls1.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325E6261DB19E00DE116B /* dtls1.h */; };
-		8163263F261DB19F00DE116B /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325E7261DB19E00DE116B /* err.h */; };
-		81632640261DB19F00DE116B /* bn.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325E8261DB19E00DE116B /* bn.h */; };
-		81632641261DB19F00DE116B /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325E9261DB19E00DE116B /* blowfish.h */; };
-		81632642261DB19F00DE116B /* cms.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325EA261DB19E00DE116B /* cms.h */; };
-		81632643261DB19F00DE116B /* engine.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325EB261DB19E00DE116B /* engine.h */; };
-		81632644261DB19F00DE116B /* conf_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325EC261DB19E00DE116B /* conf_api.h */; };
-		81632645261DB19F00DE116B /* x509.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325ED261DB19E00DE116B /* x509.h */; };
-		81632646261DB19F00DE116B /* asn1_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325EE261DB19E00DE116B /* asn1_mac.h */; };
-		81632647261DB19F00DE116B /* ui.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325EF261DB19E00DE116B /* ui.h */; };
-		81632648261DB19F00DE116B /* kssl.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325F0261DB19E00DE116B /* kssl.h */; };
-		81632649261DB19F00DE116B /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325F1261DB19E00DE116B /* sha.h */; };
-		8163264A261DB19F00DE116B /* symhacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325F2261DB19E00DE116B /* symhacks.h */; };
-		8163264B261DB19F00DE116B /* asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325F3261DB19E00DE116B /* asn1.h */; };
-		8163264C261DB19F00DE116B /* opensslconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325F4261DB19E00DE116B /* opensslconf.h */; };
-		8163264D261DB19F00DE116B /* bio.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325F5261DB19E00DE116B /* bio.h */; };
-		8163264E261DB19F00DE116B /* rc2.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325F6261DB19E00DE116B /* rc2.h */; };
-		8163264F261DB19F00DE116B /* dh.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325F7261DB19E00DE116B /* dh.h */; };
-		81632650261DB19F00DE116B /* ui_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325F8261DB19E00DE116B /* ui_compat.h */; };
-		81632651261DB19F00DE116B /* x509v3.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325F9261DB19E00DE116B /* x509v3.h */; };
-		81632652261DB19F00DE116B /* ssl23.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325FA261DB19E00DE116B /* ssl23.h */; };
-		81632653261DB19F00DE116B /* conf.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325FB261DB19E00DE116B /* conf.h */; };
-		81632654261DB19F00DE116B /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325FC261DB19E00DE116B /* md5.h */; };
-		81632655261DB19F00DE116B /* x509_vfy.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325FD261DB19E00DE116B /* x509_vfy.h */; };
-		81632656261DB19F00DE116B /* txt_db.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325FE261DB19E00DE116B /* txt_db.h */; };
-		81632657261DB19F00DE116B /* safestack.h in Headers */ = {isa = PBXBuildFile; fileRef = 816325FF261DB19E00DE116B /* safestack.h */; };
-		81632658261DB19F00DE116B /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632600261DB19E00DE116B /* ecdsa.h */; };
-		81632659261DB19F00DE116B /* objects.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632601261DB19E00DE116B /* objects.h */; };
-		8163265A261DB19F00DE116B /* pkcs12.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632602261DB19E00DE116B /* pkcs12.h */; };
-		8163265B261DB19F00DE116B /* crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632603261DB19E00DE116B /* crypto.h */; };
-		8163265C261DB19F00DE116B /* opensslv.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632604261DB19E00DE116B /* opensslv.h */; };
-		8163265D261DB19F00DE116B /* pkcs7.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632605261DB19E00DE116B /* pkcs7.h */; };
-		8163265E261DB19F00DE116B /* obj_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632606261DB19E00DE116B /* obj_mac.h */; };
-		8163265F261DB19F00DE116B /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632607261DB19E00DE116B /* buffer.h */; };
-		81632660261DB19F00DE116B /* ssl.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632608261DB19E00DE116B /* ssl.h */; };
-		81632661261DB19F00DE116B /* srp.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632609261DB19E00DE116B /* srp.h */; };
-		81632662261DB19F00DE116B /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = 8163260A261DB19E00DE116B /* camellia.h */; };
-		81632663261DB19F00DE116B /* evp.h in Headers */ = {isa = PBXBuildFile; fileRef = 8163260B261DB19E00DE116B /* evp.h */; };
-		81632664261DB19F00DE116B /* e_os2.h in Headers */ = {isa = PBXBuildFile; fileRef = 8163260C261DB19E00DE116B /* e_os2.h */; };
-		81632665261DB19F00DE116B /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = 8163260D261DB19E00DE116B /* md4.h */; };
-		81632666261DB19F00DE116B /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 8163260E261DB19E00DE116B /* hmac.h */; };
-		81632667261DB19F00DE116B /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 8163260F261DB19E00DE116B /* aes.h */; };
-		81632668261DB19F00DE116B /* comp.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632610261DB19E00DE116B /* comp.h */; };
-		81632669261DB19F00DE116B /* cast.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632611261DB19E00DE116B /* cast.h */; };
-		8163266A261DB19F00DE116B /* rc4.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632612261DB19E00DE116B /* rc4.h */; };
-		8163266B261DB19F00DE116B /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632613261DB19E00DE116B /* stack.h */; };
-		8163266C261DB19F00DE116B /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632614261DB19E00DE116B /* des.h */; };
-		8163266D261DB19F00DE116B /* ocsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632615261DB19E00DE116B /* ocsp.h */; };
-		8163266E261DB19F00DE116B /* ec.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632616261DB19E00DE116B /* ec.h */; };
-		8163266F261DB19F00DE116B /* ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632617261DB19E00DE116B /* ecdh.h */; };
-		81632670261DB19F00DE116B /* rand.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632618261DB19E00DE116B /* rand.h */; };
-		81632671261DB19F00DE116B /* ts.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632619261DB19E00DE116B /* ts.h */; };
-		81632672261DB19F00DE116B /* pqueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 8163261A261DB19E00DE116B /* pqueue.h */; };
-		81632673261DB19F00DE116B /* dso.h in Headers */ = {isa = PBXBuildFile; fileRef = 8163261B261DB19E00DE116B /* dso.h */; };
-		81632674261DB19F00DE116B /* seed.h in Headers */ = {isa = PBXBuildFile; fileRef = 8163261C261DB19E00DE116B /* seed.h */; };
-		81632675261DB19F00DE116B /* modes.h in Headers */ = {isa = PBXBuildFile; fileRef = 8163261D261DB19E00DE116B /* modes.h */; };
-		81632676261DB19F00DE116B /* ssl2.h in Headers */ = {isa = PBXBuildFile; fileRef = 8163261E261DB19E00DE116B /* ssl2.h */; };
-		81632677261DB19F00DE116B /* rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 8163261F261DB19E00DE116B /* rsa.h */; };
-		81632678261DB19F00DE116B /* krb5_asn.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632620261DB19E00DE116B /* krb5_asn.h */; };
-		81632679261DB19F00DE116B /* des_old.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632621261DB19E00DE116B /* des_old.h */; };
-		8163267A261DB19F00DE116B /* ripemd.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632622261DB19E00DE116B /* ripemd.h */; };
-		8163267B261DB19F00DE116B /* whrlpool.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632623261DB19E00DE116B /* whrlpool.h */; };
-		8163267C261DB19F00DE116B /* tls1.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632624261DB19E00DE116B /* tls1.h */; };
-		8163267D261DB19F00DE116B /* mdc2.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632625261DB19E00DE116B /* mdc2.h */; };
-		8163267E261DB19F00DE116B /* dsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632626261DB19E00DE116B /* dsa.h */; };
-		8163267F261DB19F00DE116B /* srtp.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632627261DB19E00DE116B /* srtp.h */; };
-		81632680261DB19F00DE116B /* asn1t.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632628261DB19E00DE116B /* asn1t.h */; };
-		81632681261DB19F00DE116B /* cmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632629261DB19E00DE116B /* cmac.h */; };
-		81632682261DB19F00DE116B /* ebcdic.h in Headers */ = {isa = PBXBuildFile; fileRef = 8163262A261DB19E00DE116B /* ebcdic.h */; };
-		81632683261DB19F00DE116B /* idea.h in Headers */ = {isa = PBXBuildFile; fileRef = 8163262B261DB19E00DE116B /* idea.h */; };
-		81632684261DB19F00DE116B /* lhash.h in Headers */ = {isa = PBXBuildFile; fileRef = 8163262C261DB19E00DE116B /* lhash.h */; };
-		81632685261DB19F00DE116B /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 8163262D261DB19E00DE116B /* NSData+Base64.h */; };
-		81632686261DB19F00DE116B /* NSString+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 8163262E261DB19E00DE116B /* NSString+Base64.h */; };
-		81632687261DB19F00DE116B /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8163262F261DB19E00DE116B /* NSData+Base64.m */; };
-		81632688261DB19F00DE116B /* JrNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632630261DB19E00DE116B /* JrNetworkManager.h */; };
-		81632689261DB19F00DE116B /* RSAHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 81632631261DB19E00DE116B /* RSAHandler.m */; };
-		8163268A261DB19F00DE116B /* JrLiveManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632632261DB19F00DE116B /* JrLiveManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8163268B261DB19F00DE116B /* JrNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81632633261DB19F00DE116B /* JrNetworkManager.m */; };
-		8163268C261DB19F00DE116B /* JrLiveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81632634261DB19F00DE116B /* JrLiveManager.m */; };
-		8163268D261DB19F00DE116B /* RSAHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 81632635261DB19F00DE116B /* RSAHandler.h */; };
+		1E67F094066A386AA22496D32B60CE20 /* pkcs12.h in Headers */ = {isa = PBXBuildFile; fileRef = CE811C49AA57FFD53B185835AC83C825 /* pkcs12.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		21C9545343EC92AA2C65A5878F06F9D8 /* srp.h in Headers */ = {isa = PBXBuildFile; fileRef = 8169A0659E5F3F582328C7C7746C9263 /* srp.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		22775860496CD317768DC4C35931328E /* JrLiveManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AE2E01B85BDE1759FD4702E16A723A5C /* JrLiveManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22E299C57DB2838B889851E0BD728D97 /* lhash.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CE24F1C841A1F30A35B4D8187C3A2F7 /* lhash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2906CA0481F9CA41645726B4E78C51CE /* pem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3397909CF1B85F5D778CB47D0B055261 /* pem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		29624FE2994D6BC63B3A5819F39C318D /* dtls1.h in Headers */ = {isa = PBXBuildFile; fileRef = 70FF41F7C95D6336D9F886DDE2B6439E /* dtls1.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2CA1001B3C8E932B6A91ED47765B9A0A /* pem2.h in Headers */ = {isa = PBXBuildFile; fileRef = F150EDCC9E3E8D6C737991CDE775C6AD /* pem2.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		329423069DD60D1F6F7E439476985F56 /* dsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 420899F68A426926D38F36E343D1BCBE /* dsa.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3303B752B2C0529C2E601EFA66F3CCB2 /* whrlpool.h in Headers */ = {isa = PBXBuildFile; fileRef = A5C084AEE89B2D58F5EE48B9CAF6E1E2 /* whrlpool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		33916317E8B01031208505F24766D252 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 55F680572C175090A50D55C2E2C5CEA1 /* NSData+Base64.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3447D6C0C564385AEBCE1EB3F66A6153 /* comp.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E0C6679C8030A2855CD6E4BC0CD83D4 /* comp.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		37C422944BAB4B10D74AAF2241E31092 /* ts.h in Headers */ = {isa = PBXBuildFile; fileRef = 038A07896ECE1809D18582B79FD356D8 /* ts.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3D6066E1DECBA586724B36C2103DC4D6 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 7250D5C66BCDAC71B95B665B3224552C /* hmac.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		41B226173CC30FE018ED46C7FCC3D87A /* JrLiveManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E92CF94D14B13BCDCEC1F62EAB5A1C /* JrLiveManager-dummy.m */; };
+		46518ADFFF9F5C28C7B272CE7818C44A /* ebcdic.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB6D07ADCCD06BD0CFD9895EFB49AA0 /* ebcdic.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46C2D9230B305CBAA7C4462D1A1B53C3 /* x509.h in Headers */ = {isa = PBXBuildFile; fileRef = FF8CA92E1276C7C38E5AFF5EA59B816D /* x509.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		472F2A41BF021B3B75868A78CC9C22BC /* opensslv.h in Headers */ = {isa = PBXBuildFile; fileRef = 27D42D00ADAF567FEBD3F786544F9588 /* opensslv.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4C1AC4EF5F03E41809D62DE736C91D1E /* dh.h in Headers */ = {isa = PBXBuildFile; fileRef = D0C13D11E4B552AB6E9B92867A764CE7 /* dh.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		50881980E151A72E8823B259DC6064EF /* conf_api.h in Headers */ = {isa = PBXBuildFile; fileRef = AF84B1380C3E864A4373884D92DDBACB /* conf_api.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		538FC2185CD6180347DE8ED88C508E1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5632B948B932E96B3D4BB797ED8FE631 /* ocsp.h in Headers */ = {isa = PBXBuildFile; fileRef = A115C7F1597626D92D563F2B480B11F5 /* ocsp.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		575600E188664615C4B09587199BCB3B /* e_os2.h in Headers */ = {isa = PBXBuildFile; fileRef = C21B1F89BBB2CA91635525825554CAC1 /* e_os2.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5941385038A255543ECF376FBE75CD4F /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = 975783A5DD77233322AB6FAC964EF971 /* sha.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5A7ADEEA6786F5F1530C2A3636950429 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 51950036B45435B5FB720F7278363DE6 /* NSString+Base64.m */; };
+		5D26226C688EA017E8B67718C5BDE5B1 /* safestack.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BAA2DC49BF93DDC474B2964B5D1ED61 /* safestack.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5DD44D8F87B3C0B8707C76A97E6CD81C /* JrLiveManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD1F73B8B965365B8FFDF8DF602257A /* JrLiveManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		626E65C194302BA83D3F5C202C3D7C78 /* bn.h in Headers */ = {isa = PBXBuildFile; fileRef = 6726DBC908A83A3018FB1D733BE054B3 /* bn.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		64E9E71FFEFAF840B0E280D54CFF4EC4 /* krb5_asn.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F279EDFF05689D5EB7CA8298B2C1A83 /* krb5_asn.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		660A71B2A0FDBF121446467C6620486B /* Pods-JrLiveManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91C2594D4D873781FE0C998EE185596E /* Pods-JrLiveManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FA6204DEB144B6394A334D8EA4DF5F0 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BBE1F7E947A042211C161D55B526BC /* NSData+Base64.m */; };
+		7054A6E035CCDE1E940295B297790D26 /* ssl.h in Headers */ = {isa = PBXBuildFile; fileRef = CC257FA62EC937C90545A2C9D4578721 /* ssl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7093A1D68E95BBF3AA44C45FA31A4CBE /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = 5620329321E3329FB27D59F124E5DC18 /* blowfish.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8325211F9D56E622CEBD9D909FC708B9 /* Pods-JrLiveManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63413D1465AFCCCC4B8A00F8E09C981C /* Pods-JrLiveManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9CDEA42B28CD989DCCC3405269A225CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A458F1B522DE2A92E07752D8B99941ED /* JrLiveManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7750BCDCC50CE2B986B45C97A168EFE9 /* JrLiveManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		878BE7036C933E2334908A351909187E /* seed.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B65140471460DBEA22B9B6A43B1BB3 /* seed.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		881B0EB3BA44B4632302CBDD85B99033 /* cast.h in Headers */ = {isa = PBXBuildFile; fileRef = 7357B8FB7E19B05A49030AA571B282CA /* cast.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		882B05683702C88A6D68136D95201E5A /* pkcs7.h in Headers */ = {isa = PBXBuildFile; fileRef = D27F20F216F3FF76C8C0790A0D35B857 /* pkcs7.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8CD16193076A8FAA885B47F2E92DF051 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = A8E2A242C39F37514701EFCD8B5BA5ED /* buffer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8D4A27EAAEEBD42F2FD0484A3E2D74D9 /* objects.h in Headers */ = {isa = PBXBuildFile; fileRef = 3217612F20E215D4624A93BE9FA8E1E7 /* objects.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		944D8A95414C7E456D00A7C6F6F0499C /* asn1_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 74C41EA786DDDC844CBEB2BE9095B296 /* asn1_mac.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		98214D2904F1A7CF0C64731F615787E2 /* symhacks.h in Headers */ = {isa = PBXBuildFile; fileRef = C355EDF7935BFF585B536B6F7A26ABF6 /* symhacks.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		995E0D68FC3B686DCF27094DD1ADBF1F /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 423E3DBEA34DF1165A8DD5E9A359565C /* ecdsa.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A29AD41A354D97BBC7A51BDFD79E98E7 /* ssl3.h in Headers */ = {isa = PBXBuildFile; fileRef = A42B8C8BC739BA33683FC27657E486D8 /* ssl3.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A478BE093A929DD77D6DB11165ECB5B8 /* x509_vfy.h in Headers */ = {isa = PBXBuildFile; fileRef = 544455EE773FD57E85A7BD53AD902E2D /* x509_vfy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A72CA0B90E54BC766FFDD1FBEA1A0F1B /* ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = A53CD3594265DE983AAA450AC20E8825 /* ecdh.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AA12D7F1A1DEF75808A5BDE2B7694822 /* ui.h in Headers */ = {isa = PBXBuildFile; fileRef = 0756F0C54FFB880D02B1159DE6AD4EF9 /* ui.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B15BE17AA6B6B2F735186B548BCCCE1A /* Pods-JrLiveManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEFC24B7AFA43AC9AEB22703CE09D69 /* Pods-JrLiveManager_Example-dummy.m */; };
 		B16C5D3998A16EFDCF6C302BA26F4AC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		C9C2B041CE727CE35B9F4AE6F776FA5B /* JrLiveManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2778211E2A116B7DF933196B339A0B5 /* JrLiveManager-dummy.m */; };
+		B1C14E0B76D3C763AB24893380487469 /* ripemd.h in Headers */ = {isa = PBXBuildFile; fileRef = B034DC48D62DE1CC95356901B216C35A /* ripemd.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B2697B8200B9E745539108B42CB9C7AC /* pqueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A990208DC3D2F96B725BCEF751A5FC5 /* pqueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B572FF4DB7F4BDB32B403D0A6CDF963C /* cms.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AF00480944AFB62C2F7CD13935B88D5 /* cms.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5795C1051D0D83C7BD17041806FF136 /* modes.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D644DDD3E05D83D543721D7ABED5927 /* modes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B63F5CBAEB9A52A2160D0AC046106459 /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA05EDDF3D559C6FF91D7DF32A0F170 /* des.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B6A9BF990363ABDD8304554CFC921D87 /* kssl.h in Headers */ = {isa = PBXBuildFile; fileRef = D922C632E70FC7B44D356C3CB6680507 /* kssl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BB098E3274A4904B7A1D1D2BE735B963 /* RSAHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF113356069DBD00FFB1C49BD18603B /* RSAHandler.m */; };
+		BD1F66A3A9EFD473DC33121B3B1EDF60 /* ssl2.h in Headers */ = {isa = PBXBuildFile; fileRef = DB6EB2BAA03038909FAE4837C67F1591 /* ssl2.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BF9E170CC1C98521E2B0F6E9C7129D41 /* ossl_typ.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C26EDDDC9A421BAC500FD8FDF74A3D5 /* ossl_typ.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BFBE49444A942026DDDFA6EC3090F1F3 /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = 823932C8EB250E5864F6B28636C67A08 /* md4.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C06A990187214F3102B6A0CF4010DBE4 /* obj_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 76B7F9FABA17F778BEBB6A6D2595E6E0 /* obj_mac.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C0C66182BF890C28B90A55AC3892BDDD /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FE6A2C8D2E554142383708264A956CA /* stack.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C20969A9DE01AB13658EA6065D1457C0 /* ec.h in Headers */ = {isa = PBXBuildFile; fileRef = 04B0C9A7D14A3591120A0BCA8F7F87D7 /* ec.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C292305724D0C2D2FD4B2F3F3AB6E182 /* NSString+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 50F5C52203BB0C3624A78CC6875746FD /* NSString+Base64.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C4F5C8B4D66C45283DD695C4C52FE911 /* engine.h in Headers */ = {isa = PBXBuildFile; fileRef = 259259207EE4235554329CBEFBF50EDC /* engine.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D22BBBB39B589381F7726B8EA84C7199 /* tls1.h in Headers */ = {isa = PBXBuildFile; fileRef = 609CC51E3BE54249A5561932F527CCC0 /* tls1.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D7EFF00C9DE6E1AD1E623281DF507DEB /* JrNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B0BD7FE239848E1440E58D8AE1A61949 /* JrNetworkManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D8D9F36BAC3175E203F5C3DD0A7F8BA2 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = ECD019963099891C58B86B61421F51E0 /* md5.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D92EC9A0406DD19B170A541B61CD939F /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = E3858B8622426C97DB44FF817D54C669 /* err.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DD0101614106C04C2B38231FC02A95E7 /* rand.h in Headers */ = {isa = PBXBuildFile; fileRef = 9417838E988D662A430F9F203C1D1F0B /* rand.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DF6662278AF4D81260609B3D46C7E9AA /* cmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A8351A907F50FA83DA4960F696D7AF0 /* cmac.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E2866722780A6FB2F31C9070925DD656 /* des_old.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7916A97855D223EF2FB5FD343A86B9 /* des_old.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E80C53A75AA193A4F13881E033375A8E /* mdc2.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A8B6E0D3570BE9CAD41E210F2D28AD /* mdc2.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E8267852425B251FE2494FF3779E0F04 /* idea.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBACD6B0E6ADB7A21C2C94F07336FDF /* idea.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB06C66A0E8012ADD5E84FEF243823AF /* rc2.h in Headers */ = {isa = PBXBuildFile; fileRef = 30A2CB8D1AA462A565B7C3B18F7AE9FC /* rc2.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ED46F2348CC2AB6FB74500DEFE2C75E8 /* evp.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA0CC56289D965FEDDEFF5E7C02C71C /* evp.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EFA3AB06A6EA102020D25EE913096E11 /* JrNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B44FA9989F0A75F627FF6FEC575724 /* JrNetworkManager.m */; };
+		F2CA3F004B96E7D899D5BD7E843D3683 /* ui_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = FF903F0AC7FA408696853D505F2E4F0E /* ui_compat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F595615CBAF42FEA433A7C4993B4CF5F /* ssl23.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C9B9D9B4687B4D5A1E83477AEBEF71B /* ssl23.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F683DA83702EB1D50779E7301C03E830 /* crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC68E3562AF1882650A047A86C72169 /* crypto.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F6BE2B492A6CD96CE7C86E9992F6F4DE /* conf.h in Headers */ = {isa = PBXBuildFile; fileRef = EA201DE2234E412B84B6DCCDE74E370D /* conf.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F7CE9B0C34732F7D67EEC37AD06723D3 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D61C6526ED600F7D4684B7601CFEB8 /* aes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F992E668C6AAB493378CCA7CCB9C5547 /* asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C517F9CCC2B5ACD085C55275A1DEA9C /* asn1.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FB04C787B655A3F51A5983CE4E8C8B83 /* JrLiveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34130C36CF6C592F2F33A1EB41FA89EA /* JrLiveManager.m */; };
+		FC9152F3A181AE2D72BF15516A45F203 /* x509v3.h in Headers */ = {isa = PBXBuildFile; fileRef = 312DE146FD3A998E1E2EC78A9E0D95E3 /* x509v3.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FF55418428261FDE7E8C029E9EFF3BB3 /* rc4.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BCB6B3706091A754BF564A586332DAD /* rc4.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FFEC8BACA5D29E9C2154B5DDDB7C3E23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C0CC333600E55F1366A3D4820BF9BC65 /* PBXContainerItemProxy */ = {
+		0717F8AEF0A0B6D323FDFFA920B75067 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9ED5194E665042005069EF06C82A050;
+			remoteInfo = "OpenSSL-Universal";
+		};
+		116EA0D91099ED1AD8F597CC55623DDB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 39B882F1BBE4CEF3C1A91940239A1E23;
 			remoteInfo = "Pods-JrLiveManager_Example";
 		};
-		E759A8C99BC9AFD47413280258F59E13 /* PBXContainerItemProxy */ = {
+		9456955F01B7ED3E7E3847411FD5E3A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 31E8ADC51C2F315E09782E14EFA728C1;
 			remoteInfo = JrLiveManager;
 		};
+		A818AAE2222C2B2DB223D1BFBD8E9975 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9ED5194E665042005069EF06C82A050;
+			remoteInfo = "OpenSSL-Universal";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06C80870AC47D1CE417B46CFF66710EB /* JrLiveManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JrLiveManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1469C48745AFA1F52D7D54FB2F15A87B /* JrLiveManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JrLiveManager.modulemap; sourceTree = "<group>"; };
-		28841728B71048DFAD6D631E07B567B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		038A07896ECE1809D18582B79FD356D8 /* ts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ts.h; sourceTree = "<group>"; };
+		04B0C9A7D14A3591120A0BCA8F7F87D7 /* ec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ec.h; sourceTree = "<group>"; };
+		06BDAD4699AAB410431FCF797A4B3A06 /* srtp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = srtp.h; sourceTree = "<group>"; };
+		0756F0C54FFB880D02B1159DE6AD4EF9 /* ui.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
+		0C0415768F864E81CB302C8ACCC8100E /* asn1t.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = asn1t.h; sourceTree = "<group>"; };
+		0C26EDDDC9A421BAC500FD8FDF74A3D5 /* ossl_typ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ossl_typ.h; sourceTree = "<group>"; };
+		10BBE1F7E947A042211C161D55B526BC /* NSData+Base64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		1F5A7A3F58CB5F0F5C21CF92675D3C89 /* OpenSSL-Universal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OpenSSL-Universal.release.xcconfig"; sourceTree = "<group>"; };
+		259259207EE4235554329CBEFBF50EDC /* engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
+		27D42D00ADAF567FEBD3F786544F9588 /* opensslv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = opensslv.h; sourceTree = "<group>"; };
+		2C1C79B2E4AAA61FFB9E55FA67DA2FF0 /* bio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = bio.h; sourceTree = "<group>"; };
+		2C517F9CCC2B5ACD085C55275A1DEA9C /* asn1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		2DD1F73B8B965365B8FFDF8DF602257A /* JrLiveManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JrLiveManager-umbrella.h"; sourceTree = "<group>"; };
+		2E0C6679C8030A2855CD6E4BC0CD83D4 /* comp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = comp.h; sourceTree = "<group>"; };
+		2FE6A2C8D2E554142383708264A956CA /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		30A2CB8D1AA462A565B7C3B18F7AE9FC /* rc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = rc2.h; sourceTree = "<group>"; };
+		312DE146FD3A998E1E2EC78A9E0D95E3 /* x509v3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
+		3217612F20E215D4624A93BE9FA8E1E7 /* objects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = objects.h; sourceTree = "<group>"; };
+		3397909CF1B85F5D778CB47D0B055261 /* pem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
+		34130C36CF6C592F2F33A1EB41FA89EA /* JrLiveManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JrLiveManager.m; path = JrLiveManager/Classes/JrLiveManager.m; sourceTree = "<group>"; };
 		3DF3D95873DD3185D60E9C34F11FFF31 /* Pods-JrLiveManager_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JrLiveManager_Example-Info.plist"; sourceTree = "<group>"; };
-		423352EE6FB75AFD9420FA7F60171EB9 /* JrLiveManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JrLiveManager-prefix.pch"; sourceTree = "<group>"; };
-		483ED8E453D4B7D272232C388DD9D2A8 /* Pods_JrLiveManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JrLiveManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBAF9DBB8B1C6183D0BBA03851DEE3B /* JrLiveManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JrLiveManager.modulemap; sourceTree = "<group>"; };
+		420899F68A426926D38F36E343D1BCBE /* dsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dsa.h; sourceTree = "<group>"; };
+		423E3DBEA34DF1165A8DD5E9A359565C /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		46B44FA9989F0A75F627FF6FEC575724 /* JrNetworkManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JrNetworkManager.m; path = JrLiveManager/Classes/JrNetworkManager.m; sourceTree = "<group>"; };
+		483ED8E453D4B7D272232C388DD9D2A8 /* Pods_JrLiveManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JrLiveManager_Example.framework; path = "Pods-JrLiveManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F5C52203BB0C3624A78CC6875746FD /* NSString+Base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		51950036B45435B5FB720F7278363DE6 /* NSString+Base64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		544455EE773FD57E85A7BD53AD902E2D /* x509_vfy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
+		55F680572C175090A50D55C2E2C5CEA1 /* NSData+Base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		5620329321E3329FB27D59F124E5DC18 /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
+		5AF00480944AFB62C2F7CD13935B88D5 /* cms.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = cms.h; sourceTree = "<group>"; };
+		5CE24F1C841A1F30A35B4D8187C3A2F7 /* lhash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
 		6053219D457C753504610AC19E2B576C /* Pods-JrLiveManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JrLiveManager_Tests.modulemap"; sourceTree = "<group>"; };
+		609CC51E3BE54249A5561932F527CCC0 /* tls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = tls1.h; sourceTree = "<group>"; };
 		63413D1465AFCCCC4B8A00F8E09C981C /* Pods-JrLiveManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JrLiveManager_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6726DBC908A83A3018FB1D733BE054B3 /* bn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = bn.h; sourceTree = "<group>"; };
+		684FA7FF0176F41459E8200E4DB610E1 /* rsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		6BCB6B3706091A754BF564A586332DAD /* rc4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		6BD042F5B07768A14790670272871B8D /* RSAHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSAHandler.h; path = JrLiveManager/Classes/RSAHandler.h; sourceTree = "<group>"; };
 		6CBACE2887D16961C18244B96DC55C54 /* Pods-JrLiveManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JrLiveManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		70FF41F7C95D6336D9F886DDE2B6439E /* dtls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dtls1.h; sourceTree = "<group>"; };
+		7250D5C66BCDAC71B95B665B3224552C /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7750BCDCC50CE2B986B45C97A168EFE9 /* JrLiveManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JrLiveManager-umbrella.h"; sourceTree = "<group>"; };
+		7357B8FB7E19B05A49030AA571B282CA /* cast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = cast.h; sourceTree = "<group>"; };
+		74C41EA786DDDC844CBEB2BE9095B296 /* asn1_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = asn1_mac.h; sourceTree = "<group>"; };
+		76B7F9FABA17F778BEBB6A6D2595E6E0 /* obj_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = obj_mac.h; sourceTree = "<group>"; };
+		7A8351A907F50FA83DA4960F696D7AF0 /* cmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = cmac.h; sourceTree = "<group>"; };
+		7C9B9D9B4687B4D5A1E83477AEBEF71B /* ssl23.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ssl23.h; sourceTree = "<group>"; };
 		7DEFC24B7AFA43AC9AEB22703CE09D69 /* Pods-JrLiveManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JrLiveManager_Example-dummy.m"; sourceTree = "<group>"; };
-		816325DC261DB19E00DE116B /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
-		816325DE261DB19E00DE116B /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
-		816325DF261DB19E00DE116B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		816325E0261DB19E00DE116B /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
-		816325E2261DB19E00DE116B /* pem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem2.h; sourceTree = "<group>"; };
-		816325E3261DB19E00DE116B /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
-		816325E4261DB19E00DE116B /* ssl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl3.h; sourceTree = "<group>"; };
-		816325E5261DB19E00DE116B /* ossl_typ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ossl_typ.h; sourceTree = "<group>"; };
-		816325E6261DB19E00DE116B /* dtls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtls1.h; sourceTree = "<group>"; };
-		816325E7261DB19E00DE116B /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
-		816325E8261DB19E00DE116B /* bn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn.h; sourceTree = "<group>"; };
-		816325E9261DB19E00DE116B /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
-		816325EA261DB19E00DE116B /* cms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cms.h; sourceTree = "<group>"; };
-		816325EB261DB19E00DE116B /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
-		816325EC261DB19E00DE116B /* conf_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf_api.h; sourceTree = "<group>"; };
-		816325ED261DB19E00DE116B /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
-		816325EE261DB19E00DE116B /* asn1_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1_mac.h; sourceTree = "<group>"; };
-		816325EF261DB19E00DE116B /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
-		816325F0261DB19E00DE116B /* kssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kssl.h; sourceTree = "<group>"; };
-		816325F1261DB19E00DE116B /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
-		816325F2261DB19E00DE116B /* symhacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symhacks.h; sourceTree = "<group>"; };
-		816325F3261DB19E00DE116B /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
-		816325F4261DB19E00DE116B /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslconf.h; sourceTree = "<group>"; };
-		816325F5261DB19E00DE116B /* bio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bio.h; sourceTree = "<group>"; };
-		816325F6261DB19E00DE116B /* rc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc2.h; sourceTree = "<group>"; };
-		816325F7261DB19E00DE116B /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
-		816325F8261DB19E00DE116B /* ui_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui_compat.h; sourceTree = "<group>"; };
-		816325F9261DB19E00DE116B /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
-		816325FA261DB19E00DE116B /* ssl23.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl23.h; sourceTree = "<group>"; };
-		816325FB261DB19E00DE116B /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
-		816325FC261DB19E00DE116B /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
-		816325FD261DB19E00DE116B /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
-		816325FE261DB19E00DE116B /* txt_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = txt_db.h; sourceTree = "<group>"; };
-		816325FF261DB19E00DE116B /* safestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safestack.h; sourceTree = "<group>"; };
-		81632600261DB19E00DE116B /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
-		81632601261DB19E00DE116B /* objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objects.h; sourceTree = "<group>"; };
-		81632602261DB19E00DE116B /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs12.h; sourceTree = "<group>"; };
-		81632603261DB19E00DE116B /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
-		81632604261DB19E00DE116B /* opensslv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslv.h; sourceTree = "<group>"; };
-		81632605261DB19E00DE116B /* pkcs7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs7.h; sourceTree = "<group>"; };
-		81632606261DB19E00DE116B /* obj_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obj_mac.h; sourceTree = "<group>"; };
-		81632607261DB19E00DE116B /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
-		81632608261DB19E00DE116B /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
-		81632609261DB19E00DE116B /* srp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srp.h; sourceTree = "<group>"; };
-		8163260A261DB19E00DE116B /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camellia.h; sourceTree = "<group>"; };
-		8163260B261DB19E00DE116B /* evp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evp.h; sourceTree = "<group>"; };
-		8163260C261DB19E00DE116B /* e_os2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = e_os2.h; sourceTree = "<group>"; };
-		8163260D261DB19E00DE116B /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
-		8163260E261DB19E00DE116B /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
-		8163260F261DB19E00DE116B /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
-		81632610261DB19E00DE116B /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comp.h; sourceTree = "<group>"; };
-		81632611261DB19E00DE116B /* cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cast.h; sourceTree = "<group>"; };
-		81632612261DB19E00DE116B /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
-		81632613261DB19E00DE116B /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
-		81632614261DB19E00DE116B /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
-		81632615261DB19E00DE116B /* ocsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocsp.h; sourceTree = "<group>"; };
-		81632616261DB19E00DE116B /* ec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ec.h; sourceTree = "<group>"; };
-		81632617261DB19E00DE116B /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdh.h; sourceTree = "<group>"; };
-		81632618261DB19E00DE116B /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
-		81632619261DB19E00DE116B /* ts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ts.h; sourceTree = "<group>"; };
-		8163261A261DB19E00DE116B /* pqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqueue.h; sourceTree = "<group>"; };
-		8163261B261DB19E00DE116B /* dso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dso.h; sourceTree = "<group>"; };
-		8163261C261DB19E00DE116B /* seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seed.h; sourceTree = "<group>"; };
-		8163261D261DB19E00DE116B /* modes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modes.h; sourceTree = "<group>"; };
-		8163261E261DB19E00DE116B /* ssl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl2.h; sourceTree = "<group>"; };
-		8163261F261DB19E00DE116B /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
-		81632620261DB19E00DE116B /* krb5_asn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krb5_asn.h; sourceTree = "<group>"; };
-		81632621261DB19E00DE116B /* des_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des_old.h; sourceTree = "<group>"; };
-		81632622261DB19E00DE116B /* ripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd.h; sourceTree = "<group>"; };
-		81632623261DB19E00DE116B /* whrlpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whrlpool.h; sourceTree = "<group>"; };
-		81632624261DB19E00DE116B /* tls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tls1.h; sourceTree = "<group>"; };
-		81632625261DB19E00DE116B /* mdc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdc2.h; sourceTree = "<group>"; };
-		81632626261DB19E00DE116B /* dsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsa.h; sourceTree = "<group>"; };
-		81632627261DB19E00DE116B /* srtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srtp.h; sourceTree = "<group>"; };
-		81632628261DB19E00DE116B /* asn1t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1t.h; sourceTree = "<group>"; };
-		81632629261DB19E00DE116B /* cmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmac.h; sourceTree = "<group>"; };
-		8163262A261DB19E00DE116B /* ebcdic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebcdic.h; sourceTree = "<group>"; };
-		8163262B261DB19E00DE116B /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
-		8163262C261DB19E00DE116B /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
-		8163262D261DB19E00DE116B /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		8163262E261DB19E00DE116B /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
-		8163262F261DB19E00DE116B /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		81632630261DB19E00DE116B /* JrNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JrNetworkManager.h; path = JrLiveManager/Classes/JrNetworkManager.h; sourceTree = "<group>"; };
-		81632631261DB19E00DE116B /* RSAHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSAHandler.m; path = JrLiveManager/Classes/RSAHandler.m; sourceTree = "<group>"; };
-		81632632261DB19F00DE116B /* JrLiveManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JrLiveManager.h; path = JrLiveManager/Classes/JrLiveManager.h; sourceTree = "<group>"; };
-		81632633261DB19F00DE116B /* JrNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JrNetworkManager.m; path = JrLiveManager/Classes/JrNetworkManager.m; sourceTree = "<group>"; };
-		81632634261DB19F00DE116B /* JrLiveManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JrLiveManager.m; path = JrLiveManager/Classes/JrLiveManager.m; sourceTree = "<group>"; };
-		81632635261DB19F00DE116B /* RSAHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSAHandler.h; path = JrLiveManager/Classes/RSAHandler.h; sourceTree = "<group>"; };
-		859D1162F546180E99DB9E9FA8EBEB88 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8169A0659E5F3F582328C7C7746C9263 /* srp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = srp.h; sourceTree = "<group>"; };
+		81E92CF94D14B13BCDCEC1F62EAB5A1C /* JrLiveManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JrLiveManager-dummy.m"; sourceTree = "<group>"; };
+		823932C8EB250E5864F6B28636C67A08 /* md4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		83849C58874E167B049554AF3D3BCD46 /* JrLiveManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JrLiveManager.debug.xcconfig; sourceTree = "<group>"; };
+		84AD1E7B9736790202D889E5D889C48E /* JrLiveManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JrLiveManager-prefix.pch"; sourceTree = "<group>"; };
+		87A8B6E0D3570BE9CAD41E210F2D28AD /* mdc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mdc2.h; sourceTree = "<group>"; };
+		8AA0CC56289D965FEDDEFF5E7C02C71C /* evp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = evp.h; sourceTree = "<group>"; };
+		8BAA2DC49BF93DDC474B2964B5D1ED61 /* safestack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = safestack.h; sourceTree = "<group>"; };
 		8CD21823F62235EAF494502616FC3AC5 /* Pods-JrLiveManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JrLiveManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8F279EDFF05689D5EB7CA8298B2C1A83 /* krb5_asn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = krb5_asn.h; sourceTree = "<group>"; };
 		91C2594D4D873781FE0C998EE185596E /* Pods-JrLiveManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JrLiveManager_Example-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9417838E988D662A430F9F203C1D1F0B /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
+		9648646B441DFFF3C735D1F345CBCE8C /* JrLiveManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JrLiveManager-Info.plist"; sourceTree = "<group>"; };
+		975783A5DD77233322AB6FAC964EF971 /* sha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		9A990208DC3D2F96B725BCEF751A5FC5 /* pqueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pqueue.h; sourceTree = "<group>"; };
+		9D644DDD3E05D83D543721D7ABED5927 /* modes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = modes.h; sourceTree = "<group>"; };
+		9D906C3951DB9FD793334F9DF706E955 /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = camellia.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F71BB7666753ADDB9483ECF1B38FAF4 /* opensslconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = opensslconf.h; sourceTree = "<group>"; };
+		A00901BCB93A4430578C33A30A47A8DB /* OpenSSL-Universal-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "OpenSSL-Universal-xcframeworks.sh"; sourceTree = "<group>"; };
+		A115C7F1597626D92D563F2B480B11F5 /* ocsp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ocsp.h; sourceTree = "<group>"; };
+		A1D61C6526ED600F7D4684B7601CFEB8 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		A42B8C8BC739BA33683FC27657E486D8 /* ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ssl3.h; sourceTree = "<group>"; };
+		A53CD3594265DE983AAA450AC20E8825 /* ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ecdh.h; sourceTree = "<group>"; };
+		A5C084AEE89B2D58F5EE48B9CAF6E1E2 /* whrlpool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = whrlpool.h; sourceTree = "<group>"; };
 		A7EE49FBCD804085D943A88E3808D536 /* Pods-JrLiveManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JrLiveManager_Tests-dummy.m"; sourceTree = "<group>"; };
+		A8E2A242C39F37514701EFCD8B5BA5ED /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		AADCA1D8F987E5153FA1ECE55D2B2351 /* OpenSSL.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = OpenSSL.xcframework; path = Frameworks/OpenSSL.xcframework; sourceTree = "<group>"; };
+		ADF113356069DBD00FFB1C49BD18603B /* RSAHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSAHandler.m; path = JrLiveManager/Classes/RSAHandler.m; sourceTree = "<group>"; };
+		AE2E01B85BDE1759FD4702E16A723A5C /* JrLiveManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JrLiveManager.h; path = JrLiveManager/Classes/JrLiveManager.h; sourceTree = "<group>"; };
 		AF59175CDF3F90A7DD31A6EC711DD49F /* Pods-JrLiveManager_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JrLiveManager_Tests-Info.plist"; sourceTree = "<group>"; };
+		AF7916A97855D223EF2FB5FD343A86B9 /* des_old.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = des_old.h; sourceTree = "<group>"; };
+		AF84B1380C3E864A4373884D92DDBACB /* conf_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = conf_api.h; sourceTree = "<group>"; };
+		B034DC48D62DE1CC95356901B216C35A /* ripemd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ripemd.h; sourceTree = "<group>"; };
+		B0BD7FE239848E1440E58D8AE1A61949 /* JrNetworkManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JrNetworkManager.h; path = JrLiveManager/Classes/JrNetworkManager.h; sourceTree = "<group>"; };
+		B9498D207F8FCB7D8AE5B9B3E7EE9265 /* txt_db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = txt_db.h; sourceTree = "<group>"; };
 		BB65AC7A49155671A67C4F30EBB02791 /* Pods-JrLiveManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JrLiveManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BB8FF772AE40DEA472511D9136FACBA2 /* Pods-JrLiveManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JrLiveManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BBE6B9707C3DA6579A90B782D4AC09D9 /* Pods-JrLiveManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JrLiveManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BF8DA0D095171F08F792E62BD816A786 /* JrLiveManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JrLiveManager.debug.xcconfig; sourceTree = "<group>"; };
-		C510A9CD13594F8ACE2C7DCBE3021C2B /* JrLiveManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JrLiveManager.release.xcconfig; sourceTree = "<group>"; };
-		C66C04B86C440295EF9EA3EBE70F27B8 /* JrLiveManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JrLiveManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC68E3562AF1882650A047A86C72169 /* crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
+		C21B1F89BBB2CA91635525825554CAC1 /* e_os2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = e_os2.h; sourceTree = "<group>"; };
+		C355EDF7935BFF585B536B6F7A26ABF6 /* symhacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = symhacks.h; sourceTree = "<group>"; };
+		C4EE2BDFE996A819BC539A84B2DA075C /* dso.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dso.h; sourceTree = "<group>"; };
+		C61848B8A07799FD419108592E52343A /* JrLiveManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JrLiveManager.release.xcconfig; sourceTree = "<group>"; };
+		C66C04B86C440295EF9EA3EBE70F27B8 /* JrLiveManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JrLiveManager.framework; path = JrLiveManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6B671CBE472F3F063C0FC1958EEDB54 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		CBA942D70B67070CCEF49DF777ACD982 /* OpenSSL-Universal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OpenSSL-Universal.debug.xcconfig"; sourceTree = "<group>"; };
+		CC257FA62EC937C90545A2C9D4578721 /* ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
+		CE811C49AA57FFD53B185835AC83C825 /* pkcs12.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pkcs12.h; sourceTree = "<group>"; };
+		D0C13D11E4B552AB6E9B92867A764CE7 /* dh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		D249322894E24C141AC582142080231D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D27F20F216F3FF76C8C0790A0D35B857 /* pkcs7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pkcs7.h; sourceTree = "<group>"; };
+		D922C632E70FC7B44D356C3CB6680507 /* kssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = kssl.h; sourceTree = "<group>"; };
+		D9B65140471460DBEA22B9B6A43B1BB3 /* seed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = seed.h; sourceTree = "<group>"; };
+		DB6EB2BAA03038909FAE4837C67F1591 /* ssl2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ssl2.h; sourceTree = "<group>"; };
 		DCDC9E168C494A6E290887DBF974D77F /* Pods-JrLiveManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JrLiveManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DFA05EDDF3D559C6FF91D7DF32A0F170 /* des.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
 		E0217E1A3FA57B33BCAF3663F03DC48E /* Pods-JrLiveManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JrLiveManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		E233A56399BEF319376233165F2CF172 /* Pods_JrLiveManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JrLiveManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E233A56399BEF319376233165F2CF172 /* Pods_JrLiveManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JrLiveManager_Tests.framework; path = "Pods-JrLiveManager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3858B8622426C97DB44FF817D54C669 /* err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
 		E433D7D57405C3C4957B18C3B65D951D /* Pods-JrLiveManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JrLiveManager_Example.modulemap"; sourceTree = "<group>"; };
+		EA201DE2234E412B84B6DCCDE74E370D /* conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
+		ECD019963099891C58B86B61421F51E0 /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		EEB6D07ADCCD06BD0CFD9895EFB49AA0 /* ebcdic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ebcdic.h; sourceTree = "<group>"; };
 		F09FF5C60DCD8997EEBBAD2F21122E98 /* Pods-JrLiveManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JrLiveManager_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F2778211E2A116B7DF933196B339A0B5 /* JrLiveManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JrLiveManager-dummy.m"; sourceTree = "<group>"; };
-		F319BEAF539124BA8430B3B59CA7315D /* JrLiveManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JrLiveManager-Info.plist"; sourceTree = "<group>"; };
+		F150EDCC9E3E8D6C737991CDE775C6AD /* pem2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pem2.h; sourceTree = "<group>"; };
+		F28D3F636C8E6915D086BDDA84F10FCB /* JrLiveManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JrLiveManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F53B85E301947B7FC2C93AED7D11054F /* Pods-JrLiveManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JrLiveManager_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FF8CA92E1276C7C38E5AFF5EA59B816D /* x509.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
+		FF903F0AC7FA408696853D505F2E4F0E /* ui_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ui_compat.h; sourceTree = "<group>"; };
+		FFBACD6B0E6ADB7A21C2C94F07336FDF /* idea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2DCB0016DFE5758B9457C073A1536435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFEC8BACA5D29E9C2154B5DDDB7C3E23 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63D8B151EC34CFA62C31D569102AE958 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				538FC2185CD6180347DE8ED88C508E1C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9567C782A8A0643093CC7D229BCA96C4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B16C5D3998A16EFDCF6C302BA26F4AC2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		968511A3A22D6BE4A11D7B85DB22914D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				81632637261DB19F00DE116B /* libcrypto.a in Frameworks */,
-				9CDEA42B28CD989DCCC3405269A225CA /* Foundation.framework in Frameworks */,
-				81632639261DB19F00DE116B /* libssl.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A558EB6DA602DE0FD44EB863B3F0D76D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				57CC326EC384BED9061F3AD89E6E2638 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +315,53 @@
 			path = "Target Support Files/Pods-JrLiveManager_Tests";
 			sourceTree = "<group>";
 		};
+		266C0349A588E8D6F79E2D40AA5658D2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82E24D6B0C276A1635DAE5E2A810FAFC /* JrLiveManager */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2D8C8302E198D06CDF276F3269E7D929 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AADCA1D8F987E5153FA1ECE55D2B2351 /* OpenSSL.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		316A4EE1495B6DA8B1957F93D95A92A7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A00901BCB93A4430578C33A30A47A8DB /* OpenSSL-Universal-xcframeworks.sh */,
+				CBA942D70B67070CCEF49DF777ACD982 /* OpenSSL-Universal.debug.xcconfig */,
+				1F5A7A3F58CB5F0F5C21CF92675D3C89 /* OpenSSL-Universal.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OpenSSL-Universal";
+			sourceTree = "<group>";
+		};
+		372DDDEC9E6B49A45926DBDF5D47284F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F28D3F636C8E6915D086BDDA84F10FCB /* JrLiveManager.podspec */,
+				D249322894E24C141AC582142080231D /* LICENSE */,
+				C6B671CBE472F3F063C0FC1958EEDB54 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		4E62780B97D6C66BACF776DF12651B8A /* OpenSSL-Universal */ = {
+			isa = PBXGroup;
+			children = (
+				2D8C8302E198D06CDF276F3269E7D929 /* Frameworks */,
+				316A4EE1495B6DA8B1957F93D95A92A7 /* Support Files */,
+			);
+			name = "OpenSSL-Universal";
+			path = "OpenSSL-Universal";
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,110 +370,29 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		816325DB261DB19E00DE116B /* openssl */ = {
+		82E24D6B0C276A1635DAE5E2A810FAFC /* JrLiveManager */ = {
 			isa = PBXGroup;
 			children = (
-				816325DC261DB19E00DE116B /* NSString+Base64.m */,
-				816325DD261DB19E00DE116B /* include */,
-				8163262D261DB19E00DE116B /* NSData+Base64.h */,
-				8163262E261DB19E00DE116B /* NSString+Base64.h */,
-				8163262F261DB19E00DE116B /* NSData+Base64.m */,
+				AE2E01B85BDE1759FD4702E16A723A5C /* JrLiveManager.h */,
+				34130C36CF6C592F2F33A1EB41FA89EA /* JrLiveManager.m */,
+				B0BD7FE239848E1440E58D8AE1A61949 /* JrNetworkManager.h */,
+				46B44FA9989F0A75F627FF6FEC575724 /* JrNetworkManager.m */,
+				6BD042F5B07768A14790670272871B8D /* RSAHandler.h */,
+				ADF113356069DBD00FFB1C49BD18603B /* RSAHandler.m */,
+				A1BA06EF38DF4EADA6B522A90BD0FD95 /* openssl */,
+				372DDDEC9E6B49A45926DBDF5D47284F /* Pod */,
+				96E6F33E8B32CA8016DAA35FB6D05D07 /* Support Files */,
 			);
-			name = openssl;
-			path = JrLiveManager/Classes/openssl;
+			name = JrLiveManager;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		816325DD261DB19E00DE116B /* include */ = {
+		8479BAA8FF147F675C3CCF6774776249 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				816325DE261DB19E00DE116B /* libcrypto.a */,
-				816325DF261DB19E00DE116B /* LICENSE */,
-				816325E0261DB19E00DE116B /* libssl.a */,
-				816325E1261DB19E00DE116B /* openssl */,
+				4E62780B97D6C66BACF776DF12651B8A /* OpenSSL-Universal */,
 			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		816325E1261DB19E00DE116B /* openssl */ = {
-			isa = PBXGroup;
-			children = (
-				816325E2261DB19E00DE116B /* pem2.h */,
-				816325E3261DB19E00DE116B /* pem.h */,
-				816325E4261DB19E00DE116B /* ssl3.h */,
-				816325E5261DB19E00DE116B /* ossl_typ.h */,
-				816325E6261DB19E00DE116B /* dtls1.h */,
-				816325E7261DB19E00DE116B /* err.h */,
-				816325E8261DB19E00DE116B /* bn.h */,
-				816325E9261DB19E00DE116B /* blowfish.h */,
-				816325EA261DB19E00DE116B /* cms.h */,
-				816325EB261DB19E00DE116B /* engine.h */,
-				816325EC261DB19E00DE116B /* conf_api.h */,
-				816325ED261DB19E00DE116B /* x509.h */,
-				816325EE261DB19E00DE116B /* asn1_mac.h */,
-				816325EF261DB19E00DE116B /* ui.h */,
-				816325F0261DB19E00DE116B /* kssl.h */,
-				816325F1261DB19E00DE116B /* sha.h */,
-				816325F2261DB19E00DE116B /* symhacks.h */,
-				816325F3261DB19E00DE116B /* asn1.h */,
-				816325F4261DB19E00DE116B /* opensslconf.h */,
-				816325F5261DB19E00DE116B /* bio.h */,
-				816325F6261DB19E00DE116B /* rc2.h */,
-				816325F7261DB19E00DE116B /* dh.h */,
-				816325F8261DB19E00DE116B /* ui_compat.h */,
-				816325F9261DB19E00DE116B /* x509v3.h */,
-				816325FA261DB19E00DE116B /* ssl23.h */,
-				816325FB261DB19E00DE116B /* conf.h */,
-				816325FC261DB19E00DE116B /* md5.h */,
-				816325FD261DB19E00DE116B /* x509_vfy.h */,
-				816325FE261DB19E00DE116B /* txt_db.h */,
-				816325FF261DB19E00DE116B /* safestack.h */,
-				81632600261DB19E00DE116B /* ecdsa.h */,
-				81632601261DB19E00DE116B /* objects.h */,
-				81632602261DB19E00DE116B /* pkcs12.h */,
-				81632603261DB19E00DE116B /* crypto.h */,
-				81632604261DB19E00DE116B /* opensslv.h */,
-				81632605261DB19E00DE116B /* pkcs7.h */,
-				81632606261DB19E00DE116B /* obj_mac.h */,
-				81632607261DB19E00DE116B /* buffer.h */,
-				81632608261DB19E00DE116B /* ssl.h */,
-				81632609261DB19E00DE116B /* srp.h */,
-				8163260A261DB19E00DE116B /* camellia.h */,
-				8163260B261DB19E00DE116B /* evp.h */,
-				8163260C261DB19E00DE116B /* e_os2.h */,
-				8163260D261DB19E00DE116B /* md4.h */,
-				8163260E261DB19E00DE116B /* hmac.h */,
-				8163260F261DB19E00DE116B /* aes.h */,
-				81632610261DB19E00DE116B /* comp.h */,
-				81632611261DB19E00DE116B /* cast.h */,
-				81632612261DB19E00DE116B /* rc4.h */,
-				81632613261DB19E00DE116B /* stack.h */,
-				81632614261DB19E00DE116B /* des.h */,
-				81632615261DB19E00DE116B /* ocsp.h */,
-				81632616261DB19E00DE116B /* ec.h */,
-				81632617261DB19E00DE116B /* ecdh.h */,
-				81632618261DB19E00DE116B /* rand.h */,
-				81632619261DB19E00DE116B /* ts.h */,
-				8163261A261DB19E00DE116B /* pqueue.h */,
-				8163261B261DB19E00DE116B /* dso.h */,
-				8163261C261DB19E00DE116B /* seed.h */,
-				8163261D261DB19E00DE116B /* modes.h */,
-				8163261E261DB19E00DE116B /* ssl2.h */,
-				8163261F261DB19E00DE116B /* rsa.h */,
-				81632620261DB19E00DE116B /* krb5_asn.h */,
-				81632621261DB19E00DE116B /* des_old.h */,
-				81632622261DB19E00DE116B /* ripemd.h */,
-				81632623261DB19E00DE116B /* whrlpool.h */,
-				81632624261DB19E00DE116B /* tls1.h */,
-				81632625261DB19E00DE116B /* mdc2.h */,
-				81632626261DB19E00DE116B /* dsa.h */,
-				81632627261DB19E00DE116B /* srtp.h */,
-				81632628261DB19E00DE116B /* asn1t.h */,
-				81632629261DB19E00DE116B /* cmac.h */,
-				8163262A261DB19E00DE116B /* ebcdic.h */,
-				8163262B261DB19E00DE116B /* idea.h */,
-				8163262C261DB19E00DE116B /* lhash.h */,
-			);
-			path = openssl;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		87EA78964559E1E0FE0ECA1FC8C8C728 /* Pods-JrLiveManager_Example */ = {
@@ -423,14 +412,124 @@
 			path = "Target Support Files/Pods-JrLiveManager_Example";
 			sourceTree = "<group>";
 		};
-		A959D961576F90FBD537E7C2BFDC6147 /* Pod */ = {
+		96E6F33E8B32CA8016DAA35FB6D05D07 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				06C80870AC47D1CE417B46CFF66710EB /* JrLiveManager.podspec */,
-				28841728B71048DFAD6D631E07B567B9 /* LICENSE */,
-				859D1162F546180E99DB9E9FA8EBEB88 /* README.md */,
+				3FBAF9DBB8B1C6183D0BBA03851DEE3B /* JrLiveManager.modulemap */,
+				81E92CF94D14B13BCDCEC1F62EAB5A1C /* JrLiveManager-dummy.m */,
+				9648646B441DFFF3C735D1F345CBCE8C /* JrLiveManager-Info.plist */,
+				84AD1E7B9736790202D889E5D889C48E /* JrLiveManager-prefix.pch */,
+				2DD1F73B8B965365B8FFDF8DF602257A /* JrLiveManager-umbrella.h */,
+				83849C58874E167B049554AF3D3BCD46 /* JrLiveManager.debug.xcconfig */,
+				C61848B8A07799FD419108592E52343A /* JrLiveManager.release.xcconfig */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JrLiveManager";
+			sourceTree = "<group>";
+		};
+		9CA992AEB3D3446ABC8BA38C5E9DD99B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C375EE81AA52722188C2278A8F5C3E87 /* openssl */,
+			);
+			name = include;
+			path = include;
+			sourceTree = "<group>";
+		};
+		A1BA06EF38DF4EADA6B522A90BD0FD95 /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				55F680572C175090A50D55C2E2C5CEA1 /* NSData+Base64.h */,
+				10BBE1F7E947A042211C161D55B526BC /* NSData+Base64.m */,
+				50F5C52203BB0C3624A78CC6875746FD /* NSString+Base64.h */,
+				51950036B45435B5FB720F7278363DE6 /* NSString+Base64.m */,
+				9CA992AEB3D3446ABC8BA38C5E9DD99B /* include */,
+			);
+			name = openssl;
+			path = JrLiveManager/Classes/openssl;
+			sourceTree = "<group>";
+		};
+		C375EE81AA52722188C2278A8F5C3E87 /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				A1D61C6526ED600F7D4684B7601CFEB8 /* aes.h */,
+				2C517F9CCC2B5ACD085C55275A1DEA9C /* asn1.h */,
+				74C41EA786DDDC844CBEB2BE9095B296 /* asn1_mac.h */,
+				0C0415768F864E81CB302C8ACCC8100E /* asn1t.h */,
+				2C1C79B2E4AAA61FFB9E55FA67DA2FF0 /* bio.h */,
+				5620329321E3329FB27D59F124E5DC18 /* blowfish.h */,
+				6726DBC908A83A3018FB1D733BE054B3 /* bn.h */,
+				A8E2A242C39F37514701EFCD8B5BA5ED /* buffer.h */,
+				9D906C3951DB9FD793334F9DF706E955 /* camellia.h */,
+				7357B8FB7E19B05A49030AA571B282CA /* cast.h */,
+				7A8351A907F50FA83DA4960F696D7AF0 /* cmac.h */,
+				5AF00480944AFB62C2F7CD13935B88D5 /* cms.h */,
+				2E0C6679C8030A2855CD6E4BC0CD83D4 /* comp.h */,
+				EA201DE2234E412B84B6DCCDE74E370D /* conf.h */,
+				AF84B1380C3E864A4373884D92DDBACB /* conf_api.h */,
+				BFC68E3562AF1882650A047A86C72169 /* crypto.h */,
+				DFA05EDDF3D559C6FF91D7DF32A0F170 /* des.h */,
+				AF7916A97855D223EF2FB5FD343A86B9 /* des_old.h */,
+				D0C13D11E4B552AB6E9B92867A764CE7 /* dh.h */,
+				420899F68A426926D38F36E343D1BCBE /* dsa.h */,
+				C4EE2BDFE996A819BC539A84B2DA075C /* dso.h */,
+				70FF41F7C95D6336D9F886DDE2B6439E /* dtls1.h */,
+				C21B1F89BBB2CA91635525825554CAC1 /* e_os2.h */,
+				EEB6D07ADCCD06BD0CFD9895EFB49AA0 /* ebcdic.h */,
+				04B0C9A7D14A3591120A0BCA8F7F87D7 /* ec.h */,
+				A53CD3594265DE983AAA450AC20E8825 /* ecdh.h */,
+				423E3DBEA34DF1165A8DD5E9A359565C /* ecdsa.h */,
+				259259207EE4235554329CBEFBF50EDC /* engine.h */,
+				E3858B8622426C97DB44FF817D54C669 /* err.h */,
+				8AA0CC56289D965FEDDEFF5E7C02C71C /* evp.h */,
+				7250D5C66BCDAC71B95B665B3224552C /* hmac.h */,
+				FFBACD6B0E6ADB7A21C2C94F07336FDF /* idea.h */,
+				8F279EDFF05689D5EB7CA8298B2C1A83 /* krb5_asn.h */,
+				D922C632E70FC7B44D356C3CB6680507 /* kssl.h */,
+				5CE24F1C841A1F30A35B4D8187C3A2F7 /* lhash.h */,
+				823932C8EB250E5864F6B28636C67A08 /* md4.h */,
+				ECD019963099891C58B86B61421F51E0 /* md5.h */,
+				87A8B6E0D3570BE9CAD41E210F2D28AD /* mdc2.h */,
+				9D644DDD3E05D83D543721D7ABED5927 /* modes.h */,
+				76B7F9FABA17F778BEBB6A6D2595E6E0 /* obj_mac.h */,
+				3217612F20E215D4624A93BE9FA8E1E7 /* objects.h */,
+				A115C7F1597626D92D563F2B480B11F5 /* ocsp.h */,
+				9F71BB7666753ADDB9483ECF1B38FAF4 /* opensslconf.h */,
+				27D42D00ADAF567FEBD3F786544F9588 /* opensslv.h */,
+				0C26EDDDC9A421BAC500FD8FDF74A3D5 /* ossl_typ.h */,
+				3397909CF1B85F5D778CB47D0B055261 /* pem.h */,
+				F150EDCC9E3E8D6C737991CDE775C6AD /* pem2.h */,
+				CE811C49AA57FFD53B185835AC83C825 /* pkcs12.h */,
+				D27F20F216F3FF76C8C0790A0D35B857 /* pkcs7.h */,
+				9A990208DC3D2F96B725BCEF751A5FC5 /* pqueue.h */,
+				9417838E988D662A430F9F203C1D1F0B /* rand.h */,
+				30A2CB8D1AA462A565B7C3B18F7AE9FC /* rc2.h */,
+				6BCB6B3706091A754BF564A586332DAD /* rc4.h */,
+				B034DC48D62DE1CC95356901B216C35A /* ripemd.h */,
+				684FA7FF0176F41459E8200E4DB610E1 /* rsa.h */,
+				8BAA2DC49BF93DDC474B2964B5D1ED61 /* safestack.h */,
+				D9B65140471460DBEA22B9B6A43B1BB3 /* seed.h */,
+				975783A5DD77233322AB6FAC964EF971 /* sha.h */,
+				8169A0659E5F3F582328C7C7746C9263 /* srp.h */,
+				06BDAD4699AAB410431FCF797A4B3A06 /* srtp.h */,
+				CC257FA62EC937C90545A2C9D4578721 /* ssl.h */,
+				DB6EB2BAA03038909FAE4837C67F1591 /* ssl2.h */,
+				7C9B9D9B4687B4D5A1E83477AEBEF71B /* ssl23.h */,
+				A42B8C8BC739BA33683FC27657E486D8 /* ssl3.h */,
+				2FE6A2C8D2E554142383708264A956CA /* stack.h */,
+				C355EDF7935BFF585B536B6F7A26ABF6 /* symhacks.h */,
+				609CC51E3BE54249A5561932F527CCC0 /* tls1.h */,
+				038A07896ECE1809D18582B79FD356D8 /* ts.h */,
+				B9498D207F8FCB7D8AE5B9B3E7EE9265 /* txt_db.h */,
+				0756F0C54FFB880D02B1159DE6AD4EF9 /* ui.h */,
+				FF903F0AC7FA408696853D505F2E4F0E /* ui_compat.h */,
+				A5C084AEE89B2D58F5EE48B9CAF6E1E2 /* whrlpool.h */,
+				FF8CA92E1276C7C38E5AFF5EA59B816D /* x509.h */,
+				544455EE773FD57E85A7BD53AD902E2D /* x509_vfy.h */,
+				312DE146FD3A998E1E2EC78A9E0D95E3 /* x509v3.h */,
+			);
+			name = openssl;
+			path = openssl;
 			sourceTree = "<group>";
 		};
 		CCA8513E69B71FA68A733A89D4918131 /* Targets Support Files */ = {
@@ -446,8 +545,9 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				ECBE055F87CA5D04624EF7226E1F4A4F /* Development Pods */,
+				266C0349A588E8D6F79E2D40AA5658D2 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				8479BAA8FF147F675C3CCF6774776249 /* Pods */,
 				F4E3EB682A13BCBD77C1E275DC12A39B /* Products */,
 				CCA8513E69B71FA68A733A89D4918131 /* Targets Support Files */,
 			);
@@ -461,14 +561,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		ECBE055F87CA5D04624EF7226E1F4A4F /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FA6FE6430425C1BF8CBCD178FE30EF92 /* JrLiveManager */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		F4E3EB682A13BCBD77C1E275DC12A39B /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,41 +571,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F7412DF1E10B8919586026E23917A9C2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1469C48745AFA1F52D7D54FB2F15A87B /* JrLiveManager.modulemap */,
-				F2778211E2A116B7DF933196B339A0B5 /* JrLiveManager-dummy.m */,
-				F319BEAF539124BA8430B3B59CA7315D /* JrLiveManager-Info.plist */,
-				423352EE6FB75AFD9420FA7F60171EB9 /* JrLiveManager-prefix.pch */,
-				7750BCDCC50CE2B986B45C97A168EFE9 /* JrLiveManager-umbrella.h */,
-				BF8DA0D095171F08F792E62BD816A786 /* JrLiveManager.debug.xcconfig */,
-				C510A9CD13594F8ACE2C7DCBE3021C2B /* JrLiveManager.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/JrLiveManager";
-			sourceTree = "<group>";
-		};
-		FA6FE6430425C1BF8CBCD178FE30EF92 /* JrLiveManager */ = {
-			isa = PBXGroup;
-			children = (
-				81632632261DB19F00DE116B /* JrLiveManager.h */,
-				81632634261DB19F00DE116B /* JrLiveManager.m */,
-				81632630261DB19E00DE116B /* JrNetworkManager.h */,
-				81632633261DB19F00DE116B /* JrNetworkManager.m */,
-				816325DB261DB19E00DE116B /* openssl */,
-				81632635261DB19F00DE116B /* RSAHandler.h */,
-				81632631261DB19E00DE116B /* RSAHandler.m */,
-				A959D961576F90FBD537E7C2BFDC6147 /* Pod */,
-				F7412DF1E10B8919586026E23917A9C2 /* Support Files */,
-			);
-			name = JrLiveManager;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1174775AA01EF262B3EED209A6A7E8EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				660A71B2A0FDBF121446467C6620486B /* Pods-JrLiveManager_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		193D238859887A9A8A53CF05823E51DB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -522,99 +590,91 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		196035D16CCE4D1AC1EB846B32807F6F /* Headers */ = {
+		FEA88175A919AFCE20F29E5F1E1FB420 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8163264E261DB19F00DE116B /* rc2.h in Headers */,
-				81632653261DB19F00DE116B /* conf.h in Headers */,
-				8163264D261DB19F00DE116B /* bio.h in Headers */,
-				81632666261DB19F00DE116B /* hmac.h in Headers */,
-				81632645261DB19F00DE116B /* x509.h in Headers */,
-				81632683261DB19F00DE116B /* idea.h in Headers */,
-				81632674261DB19F00DE116B /* seed.h in Headers */,
-				8163265D261DB19F00DE116B /* pkcs7.h in Headers */,
-				81632646261DB19F00DE116B /* asn1_mac.h in Headers */,
-				81632679261DB19F00DE116B /* des_old.h in Headers */,
-				8163263D261DB19F00DE116B /* ossl_typ.h in Headers */,
-				81632655261DB19F00DE116B /* x509_vfy.h in Headers */,
-				81632662261DB19F00DE116B /* camellia.h in Headers */,
-				81632680261DB19F00DE116B /* asn1t.h in Headers */,
-				81632685261DB19F00DE116B /* NSData+Base64.h in Headers */,
-				8163266E261DB19F00DE116B /* ec.h in Headers */,
-				8163266A261DB19F00DE116B /* rc4.h in Headers */,
-				8163263B261DB19F00DE116B /* pem.h in Headers */,
-				81632668261DB19F00DE116B /* comp.h in Headers */,
-				8163267C261DB19F00DE116B /* tls1.h in Headers */,
-				81632681261DB19F00DE116B /* cmac.h in Headers */,
-				81632640261DB19F00DE116B /* bn.h in Headers */,
-				81632657261DB19F00DE116B /* safestack.h in Headers */,
-				81632673261DB19F00DE116B /* dso.h in Headers */,
-				8163264A261DB19F00DE116B /* symhacks.h in Headers */,
-				81632644261DB19F00DE116B /* conf_api.h in Headers */,
-				8163263C261DB19F00DE116B /* ssl3.h in Headers */,
-				81632659261DB19F00DE116B /* objects.h in Headers */,
-				8163265C261DB19F00DE116B /* opensslv.h in Headers */,
-				81632669261DB19F00DE116B /* cast.h in Headers */,
-				8163265E261DB19F00DE116B /* obj_mac.h in Headers */,
-				81632675261DB19F00DE116B /* modes.h in Headers */,
-				8163265F261DB19F00DE116B /* buffer.h in Headers */,
-				81632661261DB19F00DE116B /* srp.h in Headers */,
-				8163266F261DB19F00DE116B /* ecdh.h in Headers */,
-				81632652261DB19F00DE116B /* ssl23.h in Headers */,
-				81632641261DB19F00DE116B /* blowfish.h in Headers */,
-				81632651261DB19F00DE116B /* x509v3.h in Headers */,
-				81632684261DB19F00DE116B /* lhash.h in Headers */,
-				8163264B261DB19F00DE116B /* asn1.h in Headers */,
-				81632677261DB19F00DE116B /* rsa.h in Headers */,
-				81632671261DB19F00DE116B /* ts.h in Headers */,
-				8163263F261DB19F00DE116B /* err.h in Headers */,
-				81632664261DB19F00DE116B /* e_os2.h in Headers */,
-				8163268A261DB19F00DE116B /* JrLiveManager.h in Headers */,
-				81632672261DB19F00DE116B /* pqueue.h in Headers */,
-				81632648261DB19F00DE116B /* kssl.h in Headers */,
-				81632670261DB19F00DE116B /* rand.h in Headers */,
-				8163265A261DB19F00DE116B /* pkcs12.h in Headers */,
-				8163264F261DB19F00DE116B /* dh.h in Headers */,
-				81632688261DB19F00DE116B /* JrNetworkManager.h in Headers */,
-				8163266B261DB19F00DE116B /* stack.h in Headers */,
-				81632642261DB19F00DE116B /* cms.h in Headers */,
-				8163267F261DB19F00DE116B /* srtp.h in Headers */,
-				81632649261DB19F00DE116B /* sha.h in Headers */,
-				8163267E261DB19F00DE116B /* dsa.h in Headers */,
-				81632667261DB19F00DE116B /* aes.h in Headers */,
-				8163263E261DB19F00DE116B /* dtls1.h in Headers */,
-				81632660261DB19F00DE116B /* ssl.h in Headers */,
-				81632650261DB19F00DE116B /* ui_compat.h in Headers */,
-				8163266D261DB19F00DE116B /* ocsp.h in Headers */,
-				8163267A261DB19F00DE116B /* ripemd.h in Headers */,
-				8163267B261DB19F00DE116B /* whrlpool.h in Headers */,
-				8163263A261DB19F00DE116B /* pem2.h in Headers */,
-				81632676261DB19F00DE116B /* ssl2.h in Headers */,
-				81632643261DB19F00DE116B /* engine.h in Headers */,
-				8163267D261DB19F00DE116B /* mdc2.h in Headers */,
-				81632678261DB19F00DE116B /* krb5_asn.h in Headers */,
-				8163264C261DB19F00DE116B /* opensslconf.h in Headers */,
-				81632682261DB19F00DE116B /* ebcdic.h in Headers */,
-				81632654261DB19F00DE116B /* md5.h in Headers */,
-				81632686261DB19F00DE116B /* NSString+Base64.h in Headers */,
-				8163268D261DB19F00DE116B /* RSAHandler.h in Headers */,
-				A458F1B522DE2A92E07752D8B99941ED /* JrLiveManager-umbrella.h in Headers */,
-				81632665261DB19F00DE116B /* md4.h in Headers */,
-				81632658261DB19F00DE116B /* ecdsa.h in Headers */,
-				8163266C261DB19F00DE116B /* des.h in Headers */,
-				81632647261DB19F00DE116B /* ui.h in Headers */,
-				81632656261DB19F00DE116B /* txt_db.h in Headers */,
-				8163265B261DB19F00DE116B /* crypto.h in Headers */,
-				81632663261DB19F00DE116B /* evp.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ECFFBB4F043299EE16F0365BC8FA3C2A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				42A8B300A0A8A938776D597111D47E31 /* Pods-JrLiveManager_Example-umbrella.h in Headers */,
+				F7CE9B0C34732F7D67EEC37AD06723D3 /* aes.h in Headers */,
+				F992E668C6AAB493378CCA7CCB9C5547 /* asn1.h in Headers */,
+				944D8A95414C7E456D00A7C6F6F0499C /* asn1_mac.h in Headers */,
+				08BC7EAA4BD3C5FF050322168C1715E8 /* asn1t.h in Headers */,
+				138F917415BFA42007B6CDC880C68433 /* bio.h in Headers */,
+				7093A1D68E95BBF3AA44C45FA31A4CBE /* blowfish.h in Headers */,
+				626E65C194302BA83D3F5C202C3D7C78 /* bn.h in Headers */,
+				8CD16193076A8FAA885B47F2E92DF051 /* buffer.h in Headers */,
+				1411D5EB73A0DD99D15B90550F23EA1B /* camellia.h in Headers */,
+				881B0EB3BA44B4632302CBDD85B99033 /* cast.h in Headers */,
+				DF6662278AF4D81260609B3D46C7E9AA /* cmac.h in Headers */,
+				B572FF4DB7F4BDB32B403D0A6CDF963C /* cms.h in Headers */,
+				3447D6C0C564385AEBCE1EB3F66A6153 /* comp.h in Headers */,
+				F6BE2B492A6CD96CE7C86E9992F6F4DE /* conf.h in Headers */,
+				50881980E151A72E8823B259DC6064EF /* conf_api.h in Headers */,
+				F683DA83702EB1D50779E7301C03E830 /* crypto.h in Headers */,
+				B63F5CBAEB9A52A2160D0AC046106459 /* des.h in Headers */,
+				E2866722780A6FB2F31C9070925DD656 /* des_old.h in Headers */,
+				4C1AC4EF5F03E41809D62DE736C91D1E /* dh.h in Headers */,
+				329423069DD60D1F6F7E439476985F56 /* dsa.h in Headers */,
+				051D5E7752E62084B1BE6069CE169581 /* dso.h in Headers */,
+				29624FE2994D6BC63B3A5819F39C318D /* dtls1.h in Headers */,
+				575600E188664615C4B09587199BCB3B /* e_os2.h in Headers */,
+				46518ADFFF9F5C28C7B272CE7818C44A /* ebcdic.h in Headers */,
+				C20969A9DE01AB13658EA6065D1457C0 /* ec.h in Headers */,
+				A72CA0B90E54BC766FFDD1FBEA1A0F1B /* ecdh.h in Headers */,
+				995E0D68FC3B686DCF27094DD1ADBF1F /* ecdsa.h in Headers */,
+				C4F5C8B4D66C45283DD695C4C52FE911 /* engine.h in Headers */,
+				D92EC9A0406DD19B170A541B61CD939F /* err.h in Headers */,
+				ED46F2348CC2AB6FB74500DEFE2C75E8 /* evp.h in Headers */,
+				3D6066E1DECBA586724B36C2103DC4D6 /* hmac.h in Headers */,
+				E8267852425B251FE2494FF3779E0F04 /* idea.h in Headers */,
+				5DD44D8F87B3C0B8707C76A97E6CD81C /* JrLiveManager-umbrella.h in Headers */,
+				22775860496CD317768DC4C35931328E /* JrLiveManager.h in Headers */,
+				D7EFF00C9DE6E1AD1E623281DF507DEB /* JrNetworkManager.h in Headers */,
+				64E9E71FFEFAF840B0E280D54CFF4EC4 /* krb5_asn.h in Headers */,
+				B6A9BF990363ABDD8304554CFC921D87 /* kssl.h in Headers */,
+				22E299C57DB2838B889851E0BD728D97 /* lhash.h in Headers */,
+				BFBE49444A942026DDDFA6EC3090F1F3 /* md4.h in Headers */,
+				D8D9F36BAC3175E203F5C3DD0A7F8BA2 /* md5.h in Headers */,
+				E80C53A75AA193A4F13881E033375A8E /* mdc2.h in Headers */,
+				B5795C1051D0D83C7BD17041806FF136 /* modes.h in Headers */,
+				33916317E8B01031208505F24766D252 /* NSData+Base64.h in Headers */,
+				C292305724D0C2D2FD4B2F3F3AB6E182 /* NSString+Base64.h in Headers */,
+				C06A990187214F3102B6A0CF4010DBE4 /* obj_mac.h in Headers */,
+				8D4A27EAAEEBD42F2FD0484A3E2D74D9 /* objects.h in Headers */,
+				5632B948B932E96B3D4BB797ED8FE631 /* ocsp.h in Headers */,
+				0BA86317381C129AA267AAD4E036EFE9 /* opensslconf.h in Headers */,
+				472F2A41BF021B3B75868A78CC9C22BC /* opensslv.h in Headers */,
+				BF9E170CC1C98521E2B0F6E9C7129D41 /* ossl_typ.h in Headers */,
+				2906CA0481F9CA41645726B4E78C51CE /* pem.h in Headers */,
+				2CA1001B3C8E932B6A91ED47765B9A0A /* pem2.h in Headers */,
+				1E67F094066A386AA22496D32B60CE20 /* pkcs12.h in Headers */,
+				882B05683702C88A6D68136D95201E5A /* pkcs7.h in Headers */,
+				B2697B8200B9E745539108B42CB9C7AC /* pqueue.h in Headers */,
+				DD0101614106C04C2B38231FC02A95E7 /* rand.h in Headers */,
+				EB06C66A0E8012ADD5E84FEF243823AF /* rc2.h in Headers */,
+				FF55418428261FDE7E8C029E9EFF3BB3 /* rc4.h in Headers */,
+				B1C14E0B76D3C763AB24893380487469 /* ripemd.h in Headers */,
+				014A2842F363E4CBB9A41B76FAB4C044 /* rsa.h in Headers */,
+				10DC74C66669674072A7C3637EDDCC50 /* RSAHandler.h in Headers */,
+				5D26226C688EA017E8B67718C5BDE5B1 /* safestack.h in Headers */,
+				878BE7036C933E2334908A351909187E /* seed.h in Headers */,
+				5941385038A255543ECF376FBE75CD4F /* sha.h in Headers */,
+				21C9545343EC92AA2C65A5878F06F9D8 /* srp.h in Headers */,
+				17B711D8A5B974A8FD7E662FC50A015A /* srtp.h in Headers */,
+				7054A6E035CCDE1E940295B297790D26 /* ssl.h in Headers */,
+				BD1F66A3A9EFD473DC33121B3B1EDF60 /* ssl2.h in Headers */,
+				F595615CBAF42FEA433A7C4993B4CF5F /* ssl23.h in Headers */,
+				A29AD41A354D97BBC7A51BDFD79E98E7 /* ssl3.h in Headers */,
+				C0C66182BF890C28B90A55AC3892BDDD /* stack.h in Headers */,
+				98214D2904F1A7CF0C64731F615787E2 /* symhacks.h in Headers */,
+				D22BBBB39B589381F7726B8EA84C7199 /* tls1.h in Headers */,
+				37C422944BAB4B10D74AAF2241E31092 /* ts.h in Headers */,
+				10BF14F9B01E406ADE60C77071580B67 /* txt_db.h in Headers */,
+				AA12D7F1A1DEF75808A5BDE2B7694822 /* ui.h in Headers */,
+				F2CA3F004B96E7D899D5BD7E843D3683 /* ui_compat.h in Headers */,
+				3303B752B2C0529C2E601EFA66F3CCB2 /* whrlpool.h in Headers */,
+				46C2D9230B305CBAA7C4462D1A1B53C3 /* x509.h in Headers */,
+				A478BE093A929DD77D6DB11165ECB5B8 /* x509_vfy.h in Headers */,
+				FC9152F3A181AE2D72BF15516A45F203 /* x509v3.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,16 +683,17 @@
 /* Begin PBXNativeTarget section */
 		31E8ADC51C2F315E09782E14EFA728C1 /* JrLiveManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6CE5948D91537E124F3A9FC256C785DF /* Build configuration list for PBXNativeTarget "JrLiveManager" */;
+			buildConfigurationList = 9FB2698022644255BA661228809C164B /* Build configuration list for PBXNativeTarget "JrLiveManager" */;
 			buildPhases = (
-				196035D16CCE4D1AC1EB846B32807F6F /* Headers */,
-				EB41D8AAA13E1801B98CB9CD7087C625 /* Sources */,
-				968511A3A22D6BE4A11D7B85DB22914D /* Frameworks */,
-				693A66E4C52701DA550D5E8BF495E8CE /* Resources */,
+				FEA88175A919AFCE20F29E5F1E1FB420 /* Headers */,
+				F92C23A92A34ADF39AB3F275F9CFBE92 /* Sources */,
+				2DCB0016DFE5758B9457C073A1536435 /* Frameworks */,
+				DE6E63CF2BE5C6E5F33599AD083803FC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C4D30AEF9CEEA78744A3CA5CA8D16723 /* PBXTargetDependency */,
 			);
 			name = JrLiveManager;
 			productName = JrLiveManager;
@@ -641,17 +702,18 @@
 		};
 		39B882F1BBE4CEF3C1A91940239A1E23 /* Pods-JrLiveManager_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C6213FBF6909784883815DA20BF73DE /* Build configuration list for PBXNativeTarget "Pods-JrLiveManager_Example" */;
+			buildConfigurationList = C7CA9410162F3C8384F2B274A2373FA7 /* Build configuration list for PBXNativeTarget "Pods-JrLiveManager_Example" */;
 			buildPhases = (
-				ECFFBB4F043299EE16F0365BC8FA3C2A /* Headers */,
-				466828F011FEFA7C365A94BB090278E3 /* Sources */,
-				A558EB6DA602DE0FD44EB863B3F0D76D /* Frameworks */,
-				0B0D194FBB2FAFF6621B91761758014E /* Resources */,
+				1174775AA01EF262B3EED209A6A7E8EF /* Headers */,
+				6D4CC76FE6760F64CA45D4191BE6703E /* Sources */,
+				63D8B151EC34CFA62C31D569102AE958 /* Frameworks */,
+				2473B89FCD89C320665D805BEB7E1F76 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D0EA66169095C423EEBA9D32C1EE08B6 /* PBXTargetDependency */,
+				6C63E24AD1D80BB78126847FEB8BC094 /* PBXTargetDependency */,
+				587BAB021CD2D835399B18AB1C92D01A /* PBXTargetDependency */,
 			);
 			name = "Pods-JrLiveManager_Example";
 			productName = "Pods-JrLiveManager_Example";
@@ -670,7 +732,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				26BCE8CED05475CC1672E5DB67A86F6C /* PBXTargetDependency */,
+				0F2F2CB6810FEDCEC257B89E84CCA47F /* PBXTargetDependency */,
 			);
 			name = "Pods-JrLiveManager_Tests";
 			productName = "Pods-JrLiveManager_Tests";
@@ -700,6 +762,7 @@
 			projectRoot = "";
 			targets = (
 				31E8ADC51C2F315E09782E14EFA728C1 /* JrLiveManager */,
+				B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */,
 				39B882F1BBE4CEF3C1A91940239A1E23 /* Pods-JrLiveManager_Example */,
 				824F078B479FD1BE3907D29BB56E07EF /* Pods-JrLiveManager_Tests */,
 			);
@@ -707,13 +770,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0B0D194FBB2FAFF6621B91761758014E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0C705569376A8300A514EF9BA1A9778B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -721,22 +777,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		693A66E4C52701DA550D5E8BF495E8CE /* Resources */ = {
+		2473B89FCD89C320665D805BEB7E1F76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81632638261DB19F00DE116B /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE6E63CF2BE5C6E5F33599AD083803FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AFAFAF6A5069BBC19C690B4E263E293A /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/OpenSSL-Universal/OpenSSL-Universal-xcframeworks.sh",
+				"${PODS_ROOT}/OpenSSL-Universal/Frameworks/OpenSSL.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/OpenSSL-Universal/OpenSSL-Universal-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		466828F011FEFA7C365A94BB090278E3 /* Sources */ = {
+		6D4CC76FE6760F64CA45D4191BE6703E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DA47D7BC0DFE0AE4E9ACEB300C3FFA0 /* Pods-JrLiveManager_Example-dummy.m in Sources */,
+				B15BE17AA6B6B2F735186B548BCCCE1A /* Pods-JrLiveManager_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,37 +831,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB41D8AAA13E1801B98CB9CD7087C625 /* Sources */ = {
+		F92C23A92A34ADF39AB3F275F9CFBE92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81632636261DB19F00DE116B /* NSString+Base64.m in Sources */,
-				8163268C261DB19F00DE116B /* JrLiveManager.m in Sources */,
-				8163268B261DB19F00DE116B /* JrNetworkManager.m in Sources */,
-				C9C2B041CE727CE35B9F4AE6F776FA5B /* JrLiveManager-dummy.m in Sources */,
-				81632687261DB19F00DE116B /* NSData+Base64.m in Sources */,
-				81632689261DB19F00DE116B /* RSAHandler.m in Sources */,
+				41B226173CC30FE018ED46C7FCC3D87A /* JrLiveManager-dummy.m in Sources */,
+				FB04C787B655A3F51A5983CE4E8C8B83 /* JrLiveManager.m in Sources */,
+				EFA3AB06A6EA102020D25EE913096E11 /* JrNetworkManager.m in Sources */,
+				6FA6204DEB144B6394A334D8EA4DF5F0 /* NSData+Base64.m in Sources */,
+				5A7ADEEA6786F5F1530C2A3636950429 /* NSString+Base64.m in Sources */,
+				BB098E3274A4904B7A1D1D2BE735B963 /* RSAHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		26BCE8CED05475CC1672E5DB67A86F6C /* PBXTargetDependency */ = {
+		0F2F2CB6810FEDCEC257B89E84CCA47F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-JrLiveManager_Example";
 			target = 39B882F1BBE4CEF3C1A91940239A1E23 /* Pods-JrLiveManager_Example */;
-			targetProxy = C0CC333600E55F1366A3D4820BF9BC65 /* PBXContainerItemProxy */;
+			targetProxy = 116EA0D91099ED1AD8F597CC55623DDB /* PBXContainerItemProxy */;
 		};
-		D0EA66169095C423EEBA9D32C1EE08B6 /* PBXTargetDependency */ = {
+		587BAB021CD2D835399B18AB1C92D01A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "OpenSSL-Universal";
+			target = B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */;
+			targetProxy = 0717F8AEF0A0B6D323FDFFA920B75067 /* PBXContainerItemProxy */;
+		};
+		6C63E24AD1D80BB78126847FEB8BC094 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JrLiveManager;
 			target = 31E8ADC51C2F315E09782E14EFA728C1 /* JrLiveManager */;
-			targetProxy = E759A8C99BC9AFD47413280258F59E13 /* PBXContainerItemProxy */;
+			targetProxy = 9456955F01B7ED3E7E3847411FD5E3A4 /* PBXContainerItemProxy */;
+		};
+		C4D30AEF9CEEA78744A3CA5CA8D16723 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "OpenSSL-Universal";
+			target = B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */;
+			targetProxy = A818AAE2222C2B2DB223D1BFBD8E9975 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1B282B318AED33B76BEA18811D54C2ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F5A7A3F58CB5F0F5C21CF92675D3C89 /* OpenSSL-Universal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -845,10 +954,11 @@
 			};
 			name = Debug;
 		};
-		325A0F1FC35ADDD318ED0B4AB8BBD966 /* Release */ = {
+		554BCDFB43341EAA6AFD6DEF645768AF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C510A9CD13594F8ACE2C7DCBE3021C2B /* JrLiveManager.release.xcconfig */;
+			baseConfigurationReference = 8CD21823F62235EAF494502616FC3AC5 /* Pods-JrLiveManager_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -857,26 +967,51 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-JrLiveManager_Example/Pods-JrLiveManager_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JrLiveManager_Example/Pods-JrLiveManager_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		58C9EBF6B2E8A6DC10F577E18634B80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C61848B8A07799FD419108592E52343A /* JrLiveManager.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/JrLiveManager/JrLiveManager-prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../JrLiveManager/Classes/openssl/include\"";
 				INFOPLIST_FILE = "Target Support Files/JrLiveManager/JrLiveManager-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../JrLiveManager/Classes/openssl/include\"";
-				MACH_O_TYPE = staticlib;
-				MARKETING_VERSION = 0.1.1;
 				MODULEMAP_FILE = "Target Support Files/JrLiveManager/JrLiveManager.modulemap";
-				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_MODULE_NAME = JrLiveManager;
 				PRODUCT_NAME = JrLiveManager;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -915,9 +1050,9 @@
 			};
 			name = Debug;
 		};
-		5F1C7494C69E9B47D8B7BC300FF64266 /* Debug */ = {
+		793FAB91084144CAE98A2FDA2900B1BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CD21823F62235EAF494502616FC3AC5 /* Pods-JrLiveManager_Example.debug.xcconfig */;
+			baseConfigurationReference = F53B85E301947B7FC2C93AED7D11054F /* Pods-JrLiveManager_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -942,15 +1077,17 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		83C1A7DF09A082E5D19D99C3E435C05A /* Debug */ = {
+		852BAC064F9EB7E4CB831BF75D90388F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF8DA0D095171F08F792E62BD816A786 /* JrLiveManager.debug.xcconfig */;
+			baseConfigurationReference = 83849C58874E167B049554AF3D3BCD46 /* JrLiveManager.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -959,26 +1096,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/JrLiveManager/JrLiveManager-prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../JrLiveManager/Classes/openssl/include\"";
 				INFOPLIST_FILE = "Target Support Files/JrLiveManager/JrLiveManager-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../JrLiveManager/Classes/openssl/include\"";
-				MACH_O_TYPE = staticlib;
-				MARKETING_VERSION = 0.1.1;
 				MODULEMAP_FILE = "Target Support Files/JrLiveManager/JrLiveManager.modulemap";
-				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_MODULE_NAME = JrLiveManager;
 				PRODUCT_NAME = JrLiveManager;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1072,53 +1202,34 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		D189EF310600D13F8F31623AAADE3ED1 /* Release */ = {
+		DA877054C829483C273C4DD3FE248B32 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F53B85E301947B7FC2C93AED7D11054F /* Pods-JrLiveManager_Example.release.xcconfig */;
+			baseConfigurationReference = CBA942D70B67070CCEF49DF777ACD982 /* OpenSSL-Universal.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JrLiveManager_Example/Pods-JrLiveManager_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JrLiveManager_Example/Pods-JrLiveManager_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C6213FBF6909784883815DA20BF73DE /* Build configuration list for PBXNativeTarget "Pods-JrLiveManager_Example" */ = {
+		3EDA96977B3454C0AF5F3ED805F80D06 /* Build configuration list for PBXAggregateTarget "OpenSSL-Universal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5F1C7494C69E9B47D8B7BC300FF64266 /* Debug */,
-				D189EF310600D13F8F31623AAADE3ED1 /* Release */,
+				DA877054C829483C273C4DD3FE248B32 /* Debug */,
+				1B282B318AED33B76BEA18811D54C2ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1132,11 +1243,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6CE5948D91537E124F3A9FC256C785DF /* Build configuration list for PBXNativeTarget "JrLiveManager" */ = {
+		9FB2698022644255BA661228809C164B /* Build configuration list for PBXNativeTarget "JrLiveManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83C1A7DF09A082E5D19D99C3E435C05A /* Debug */,
-				325A0F1FC35ADDD318ED0B4AB8BBD966 /* Release */,
+				852BAC064F9EB7E4CB831BF75D90388F /* Debug */,
+				58C9EBF6B2E8A6DC10F577E18634B80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7CA9410162F3C8384F2B274A2373FA7 /* Build configuration list for PBXNativeTarget "Pods-JrLiveManager_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554BCDFB43341EAA6AFD6DEF645768AF /* Debug */,
+				793FAB91084144CAE98A2FDA2900B1BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

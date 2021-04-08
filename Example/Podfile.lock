@@ -1,15 +1,22 @@
 PODS:
-  - JrLiveManager (0.1.0)
+  - JrLiveManager (0.1.2):
+    - OpenSSL-Universal
+  - OpenSSL-Universal (1.1.1100)
 
 DEPENDENCIES:
   - JrLiveManager (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - OpenSSL-Universal
 
 EXTERNAL SOURCES:
   JrLiveManager:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JrLiveManager: 51be514786f1564e6404730fb53f36a6025982d5
+  JrLiveManager: 7c16bc0841f6092019f3adcf6197635b251d5592
+  OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
 
 PODFILE CHECKSUM: 611984444ca58a68e951c5252bcde883809589db
 
